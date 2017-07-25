@@ -15,7 +15,7 @@ import { RepoDetailComponent } from './github/repo-detail/repo-detail.component'
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
 
-import { DataServiceProvider } from './services/data/data.service';
+import { DataService } from './services/data/data.service';
 import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
@@ -38,7 +38,7 @@ import { DetailComponent } from './detail/detail.component';
   ],
   providers: [
     GithubService,
-    DataServiceProvider
+    DataService
   ],
   bootstrap: [ AppComponent ]
 })

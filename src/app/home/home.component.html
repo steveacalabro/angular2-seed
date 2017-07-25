@@ -13,15 +13,15 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr *ngFor="let dataModel of data">
       <td>
-        a1
+        {{dataModel.name}}
       </td>
       <td>
-        C1
+        {{dataModel.category}}
       </td>
       <td>
-        10
+        {{dataModel.amount}}
       </td>
     </tr>
   </tbody>

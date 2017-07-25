@@ -6,13 +6,13 @@ import 'rxjs/Rx';
 import { DataModel } from '../../models/dataModel.model';
 
 @Injectable()
-export class DataServiceProvider {
+export class DataService {
   constructor(public http: Http) { }
 
-  getData(): Observable<DataModel> {
-    return this.http.get(`../../data/data.json`)
+  getData(): Observable<DataModel[]> {
+    return this.http.get(`data/data.json`)
       .map((res: Response) => {
-        return <DataModel>res.json();
+        return <DataModel[]>res.json();
       })
       .catch((error) => {
         console.error(error.json());
