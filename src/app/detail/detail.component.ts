@@ -29,8 +29,6 @@ export class DetailComponent {
         .flatMap(group => group.reduce((acc, curr) => [...acc, curr], []))
         .subscribe(grouped => {
           this.groupedData.push(grouped);
-        },()=>{}, () => {
-          console.log(this.groupedData);
         });
       },
       err => {

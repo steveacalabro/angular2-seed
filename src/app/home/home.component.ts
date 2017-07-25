@@ -28,7 +28,6 @@ export class HomeComponent {
   }
 
   sort(col: string) {
-    console.log("sort");
     if (this.sortDir === 'asc') {
       // Desc action
       this.sortDir = 'desc';
