@@ -16,3 +16,11 @@
 * Used RXjs groupBy to group items by name
 * Created a function `addCategoryAmounts()` to take in row of items grouped by name and calcuate the amount by category
 * Updated template to display the name of the first object in the group by and called the functions to get the amounts for that category
+
+# How long did this take.
+
+This took me about an hour and a half. The reason behind this was the tedious process of just typing the code out and routes. Additionally, I had forgoten the specific sytanx of `Array.Prototype.sort()` compare functions as well as the RxJS `groupBy()` function. I have used them in the past but in their more simple forms. 
+
+# I learned
+
+I re-learned the custom compare function. I think what I did could be improved since it only really handles numbers and strings, but I did get to exapand on the basic `sort()` and `reverse()` functions. 
