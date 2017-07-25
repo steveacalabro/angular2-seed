@@ -19,7 +19,6 @@ export class HomeComponent {
     this.dataService.getData().subscribe(
       res => {
         this.data = res;
-        console.log(this.data);
       },
       err => {
         console.error('Error!: ', err);
